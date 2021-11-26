@@ -1,13 +1,34 @@
-<%- include("partials/header")  %> 
+<%- include("partials/header")  %>
 
 
-<h1>Welcome to the Developer Thought</h1>
-<p><%= startingContent %></p>
 
-<% posts.forEach(function(post){ %>
-    <h1><%= post.title %></h1>
-    <p><%= post.content %></p>
-<% }); %>
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+    
+            <h1>Welcome to the Developer Thought</h1>
+            <p><%= startingContent %></p>
+
+            <% posts.forEach(function(post){ %>
+            <h1><%= post.title %></h1>
+            <p><%= post.content.substring(0, 300) %>...
+                <a href="/posts/<%=post.slug%> ">Read More</a>
+            </p>
+            <% }); %>
+
+        </div>
+        <div class="col-4">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod soluta impedit delectus libero illo,
+            similique quae repellendus. Reprehenderit, atque nihil ut similique nostrum modi libero ad cum rerum dolor
+            omnis?
+        </div>
+    </div>
+</div>
+
+
+
+
+
 
 
 
