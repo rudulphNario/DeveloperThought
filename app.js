@@ -7,6 +7,7 @@ const ejs = require("ejs");
 const https = require("https");
 const _ = require("lodash");
 const { emitKeypressEvents } = require("readline");
+const mongoose = require("mongoose");
 
 
 // const homeStartingContent = "Why and how developers have a massive impact on our communities today. And why this is important to learn in any aspect fo today's life. On this site, were going to analyze the shallow and more profound Developer Thought." + ' '+"When developers make things that help imporve life quickly or solve the problem to make things done. As a result, we can save energy and money. Imagine you walk to the supermarket to go shopping, take a lot of stuff you need in your shopping list, and suddenly when you're standing at the counter to pay your bill then you notice your wallet wasn't in your purse. The Developer came to the rescue. They build mobile apps; like Apple pay, Google Pay, Paypal, and etc, providing contactless payments. Now you can shop easily using your mobile apps but make sure there's enough money in your bank.😂😂";
