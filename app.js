@@ -22,6 +22,10 @@ app.use(express.urlencoded({
   extended: true
 }));
 
+mongoose.connect("mongodb+srv://admin-rudulph:Test123@cluster0.6fosu.mongodb.net/developerThoughtPost", {
+  useNewUrlParser: true
+});
+
 let posts = [];
 
 app.get("/", function (req, res) {
