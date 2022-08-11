@@ -23,7 +23,8 @@ app.use(express.urlencoded({
   extended: true
 }));
 
-mongoose.connect("mongodb+srv://admin-rudulph:Test123@cluster0.6fosu.mongodb.net/developerThoughtPost", {
+
+mongoose.connect("mongodb+srv://admin-rudulph:Test123@cluster0.6fosu.mongodb.net/todolistDB", {
   useNewUrlParser: true
 });
 
