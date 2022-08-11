@@ -36,12 +36,6 @@ app.get("/", function (req, res) {
   });
 });
 
-app.get('/news', (req, res) => {
-  res.render("news")
-})
-app.get('/about', (req, res) => {
-  res.render('about')
-})
 
 app.get('/compose', (req, res) => {
   res.render("compose")
@@ -71,6 +65,13 @@ app.get("/posts/:postName", function(req, res){
   }
   });
 });
+
+app.get('/news', (req, res) => {
+  res.render("news")
+})
+app.get('/about', (req, res) => {
+  res.render('about')
+})
 
 
 app.get("/contact", function (req, res) {
