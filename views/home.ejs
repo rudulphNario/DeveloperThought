@@ -1,30 +1,41 @@
-<%- include("partials/header")  %>
+<%- include("partials/header") %>
 
 
 
-<div class="container">
-    <div class="row">
-        <div class="col-8">
-    
-            <h1>Welcome to the Developer Thought</h1>
-            <p>Why and how developers have a massive impact on our communities today. And why this is important to learn in any aspect of today's life. On this site, were going to analyze the shallow and more profound Developer Thought.</p>
-            <p>When developers make things that help improve life quickly or solve the problem to make things done. As a result, we can save energy and money. Imagine you walk to the supermarket to go shopping, take a lot of stuff from your shopping list, and suddenly when you're standing at the counter to pay the bill. And you notice your wallet wasn't in your purse. Then the Developer came to the rescue. They build mobile apps, Apple Pay, Google Pay, Paypal, etc., providing contactless payments. Now you can shop easily using your mobile apps but make sure there's enough money in them.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
 
-            <% posts.forEach(function(post){ %>
-            <h1><%= post.title %></h1>
-            <p><%= post.content.substring(0, 300) %>...
-                <a href="/posts/<%=post.slug%> ">Read More</a>
-            </p>
-            <% }); %>
+                <h1>Welcome to the Developer Thought</h1>
+                <p>
+                    <%= startingContent %>
+                </p>
+                <p>When developers make things that help improve life quickly or solve the problem to make things done.
+                    As a result, we can save energy and money. Imagine you walk to the supermarket to go shopping, take
+                    a lot of stuff from your shopping list, and suddenly when you're standing at the counter to pay the
+                    bill. And you notice your wallet wasn't in your purse. Then the Developer came to the rescue. They
+                    build mobile apps, Apple Pay, Google Pay, Paypal, etc., providing contactless payments. Now you can
+                    shop easily using your mobile apps but make sure there's enough money in them.</p>
 
-        </div>
-        <div class="col-4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod soluta impedit delectus libero illo,
-            similique quae repellendus. Reprehenderit, atque nihil ut similique nostrum modi libero ad cum rerum dolor
-            omnis?
+                   <% posts.forEach(function(post){ %>
+                        <h1><%= post.title %> </h1>
+                        <p><%= post.content.substring(0, 100) + "..." %>
+                        <a href="/posts/<%=post.title%>">Read More</a>
+                        </p>
+                   <% }); %>
+               
+
+                    
+
+            </div>
+            <div class="col-4">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod soluta impedit delectus libero illo,
+                similique quae repellendus. Reprehenderit, atque nihil ut similique nostrum modi libero ad cum rerum
+                dolor
+                omnis?
+            </div>
         </div>
     </div>
-</div>
 
 
 
@@ -33,4 +44,4 @@
 
 
 
-<%- include("partials/footer") %>
+    <%- include("partials/footer") %>
