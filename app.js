@@ -23,7 +23,12 @@ app.use(express.urlencoded({
   extended: true
 }));
 
-mongoose.connect('mongodb+srv://admin-rudulph:Test123@cluster0.6fosu.mongodb.net/blogDB',{useNewUrlParser: true});
+/* --- remove comment for live connection*/
+
+mongoose.connect('mongodb+srv://admin-rudulph:test123@cluster0.6fosu.mongodb.net/blogDB',{useNewUrlParser: true});
+
+/* --- Internal Database Connection --*/
+// mongoose.connect("mongodb://localhost:27017/blogDB", {useNewUrlParser: true, useUnifiedTopology: true});
 
 const postSchema = {
   title: String,
